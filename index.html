@@ -21,7 +21,8 @@
                 extend: {
                     colors: {
                         primary: '#FF4240',
-                        paragraph: '#ffffff99',
+                        paragraph: '#13131899',
+                        border: '#13131833',
                     }
                 }
             }
@@ -30,6 +31,10 @@
     <style>
         .font-manrope {
             font-family: 'Manrope', sans-serif;
+        }
+        .card.image-full:before {
+            background-color: #13131880;
+       
         }
     </style>
 </head>
@@ -83,8 +88,7 @@
             <div class="carousel w-full rounded-xl">
                 <div id="slide1" class="carousel-item relative w-full justify-center">
                     <img src="./Images/1.png" class="w-full rounded-xl" />
-                    <div
-                        class="absolute flex gap-4 transform -translate-y-1/2 lg:left-10 top-[85%] lg:top-[90%]">
+                    <div class="absolute flex gap-4 transform -translate-y-1/2 lg:left-10 top-[85%] lg:top-[90%]">
                         <a href="#slide4" class="btn btn-circle bg-black text-white border-0 ">❮</a>
                         <a href="#slide2" class="btn btn-circle bg-black text-white border-0 ">❯</a>
                     </div>
@@ -92,8 +96,7 @@
                 <div id="slide2" class="carousel-item relative w-full justify-center">
                     <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
                         class="w-full rounded-xl" />
-                    <div
-                        class="absolute flex gap-4 transform -translate-y-1/2 lg:left-10 top-[85%] lg:top-[90%]">
+                    <div class="absolute flex gap-4 transform -translate-y-1/2 lg:left-10 top-[85%] lg:top-[90%]">
                         <a href="#slide1" class="btn btn-circle bg-black text-white border-0 ">❮</a>
                         <a href="#slide3" class="btn btn-circle bg-black text-white border-0 ">❯</a>
                     </div>
@@ -101,16 +104,14 @@
                 <div id="slide3" class="carousel-item relative w-full justify-center">
                     <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
                         class="w-full rounded-xl" />
-                    <div
-                        class="absolute flex gap-4 transform -translate-y-1/2 lg:left-10 top-[85%] lg:top-[90%]">
+                    <div class="absolute flex gap-4 transform -translate-y-1/2 lg:left-10 top-[85%] lg:top-[90%]">
                         <a href="#slide2" class="btn btn-circle bg-black text-white border-0 ">❮</a>
                         <a href="#slide4" class="btn btn-circle bg-black text-white border-0 ">❯</a>
                     </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full justify-center">
                     <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-                    <div
-                        class="absolute flex gap-4 transform -translate-y-1/2 lg:left-10 top-[85%] lg:top-[90%]">
+                    <div class="absolute flex gap-4 transform -translate-y-1/2 lg:left-10 top-[85%] lg:top-[90%]">
                         <a href="#slide3" class="btn btn-circle bg-black text-white border-0 ">❮</a>
                         <a href="#slide1" class="btn btn-circle bg-black text-white border-0 ">❯</a>
                     </div>
@@ -118,7 +119,7 @@
             </div>
             <div class="bg-black p-8 rounded-2xl lg:absolute lg:right-8 lg:bottom-8 lg:w-2/4 mt-4">
                 <h3 class="font-extrabold text-lg lg:text-2xl text-white">Meet all the heroes from the field</h3>
-                <p class="text-paragraph font-medium text-sm lg:text-base">Hockey heroes inspire with skill, tenacity,
+                <p class="text-[#ffffff99] font-medium text-sm lg:text-base">Hockey heroes inspire with skill, tenacity,
                     and
                     teamwork. Their determination on the ice captivates fans, creating unforgettable moments in sports
                     history.</p>
@@ -127,8 +128,93 @@
 
     </header>
 
-    <main>
-
+    <main class="container mx-5 lg:mx-auto w-auto">
+        <section class="mt-24">
+            <div class="border-dashed border-y-2 border-border text-center p-8">
+                <h3 class="text-2xl lg:text-4xl font-extrabold">Professional Hockeys Club</h3>
+                <p class="text-paragraph font-medium text-sm lg:text-base pt-6">A professional hockey club embodies
+                    dedication, skill, and passion. With a storied legacy, they compete for glory, thrilling fans
+                    worldwide.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-8 justify-center text-center mt-10">
+                <div>
+                    <div class="radial-progress text-2xl font-extrabold"
+                        style="--value:78; --size: 7rem; color:#FF4240;" role="progressbar">
+                        <p class=" text-black">78%</p>
+                    </div>
+                    <h3 class="font-semibold text-xl p-4">Player Facility</h3>
+                    <p class="font-normal text-base text-paragraph">Player facilities offer cutting-edge amenities for
+                        optimal training and development.</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-2xl font-extrabold"
+                        style="--value:90; color:#49D293; --size: 7rem; " role="progressbar">
+                        <p class=" text-black">90%</p>
+                    </div>
+                    <h3 class="font-semibold text-xl p-4">Experienced Coach</h3>
+                    <p class="font-normal text-base text-paragraph">An experienced coach brings wisdom, strategy, and
+                        mentorship to player development.</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-2xl font-extrabold"
+                        style="--value:95; --size: 7rem; color: #FFB546;" role="progressbar">
+                        <p class=" text-black">95%</p>
+                    </div>
+                    <h3 class="font-semibold text-xl p-4">Senior Player</h3>
+                    <p class="font-normal text-base text-paragraph">Senior players exemplify leadership, experience, and
+                        skill, enhancing team success.</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-2xl font-extrabold"
+                        style="--value:80; --size: 7rem; color: #4C8DF1;" role="progressbar">
+                        <p class=" text-black">80%</p>
+                    </div>
+                    <h3 class="font-semibold text-xl p-4">Training Ground</h3>
+                    <p class="font-normal text-base text-paragraph">The training ground is vital for athlete
+                        development, skill-building, and teamwork.</p>
+                </div>
+            </div>
+        </section>
+        <section class="mt-24">
+            <div class="border-dashed border-y-2 border-border text-center p-8">
+                <h3 class="text-2xl lg:text-4xl font-extrabold">Program Sections</h3>
+                <p class="text-paragraph font-medium text-sm lg:text-base pt-6">Program sections cater to diverse needs,
+                    offering tailored experiences for juniors, teenagers, and professionals, ensuring comprehensive
+                    development in respective stages.</p>
+            </div>
+            <div class="mt-10 flex flex-col lg:grid gap-6 lg:grid-cols-2 rounded-2xl">
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <div><img class="w-full h-full" src="./Images/2.png" alt="" /></div>
+                    <div class="card-body lg:pt-64">
+                      <h2 class="card-title font-extrabold text-3xl">Junior Program</h2>
+                      <p class="font-normal text-base flex-grow-0 py-6">Junior hockey programs nurture young talents, emphasizing skill development, teamwork, and sportsmanship for future success on the ice.</p>
+                      <div class="card-actions justify-start">
+                        <button class="btn border-0 lg:px-6 bg-primary text-white font-bold text-lg lg:text-xl flex justify-center items-center ">Register Now!</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img class="w-full h-full" src="./Images/3.png" alt="" /></figure>
+                    <div class="card-body lg:pt-64">
+                      <h2 class="card-title font-extrabold text-3xl">Teenager Program</h2>
+                      <p class="font-normal text-base flex-grow-0 py-6">Junior hockey programs nurture young talents, emphasizing skill development, teamwork, and sportsmanship for future success on the ice.</p>
+                      <div class="card-actions justify-start">
+                        <button class="btn border-0 lg:px-6 bg-primary text-white font-bold text-lg lg:text-xl flex justify-center items-center ">Register Now!</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card bg-base-100 shadow-xl image-full col-span-2">
+                    <figure><img class="w-full h-full" src="./Images/4.png" alt="" /></figure>
+                    <div class="card-body lg:pt-96">
+                      <h2 class="card-title font-extrabold text-3xl">Professional Program</h2>
+                      <p class="font-normal text-base flex-grow-0 py-6">Junior hockey programs nurture young talents, emphasizing skill development, teamwork, and sportsmanship for future success on the ice.</p>
+                      <div class="card-actions justify-start">
+                        <button class="btn border-0 lg:px-6 bg-primary text-white font-bold text-lg lg:text-xl flex justify-center items-center ">Register Now!</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
     </main>
 
     <footer>
